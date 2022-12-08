@@ -1,5 +1,8 @@
 materialy/
 
+### Node ###
+node_modules/
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/tasks.json

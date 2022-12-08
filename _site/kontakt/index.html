@@ -37,29 +37,43 @@
 
     <main class="main">
                 <div class="introduction">
-            <h1 class="introduction__title">Kontaktujte mě!</h1>
+            <h1 class="title title--big title--center">Kontaktujte mě!</h1>
             <p class="introduction__text">
                 Pokud máte zájem o plyšáka nebo byste se rádi na něco zeptali, napište mi!
             </p>
         </div>
 
-        <form method="action">
-            <label for="jmeno"> Jméno </label>
-            <input 	
-                type="text" 
-			    name="jmeno"
-			    id="jmeno"
-			    maxlength="10"
-			    value=""
-			    placeholder="Celé jméno"
-			    autofocus disabled readonly required>
-        </form>
-        
-        <div class="info">
-        <p>Michaela Křenková</p>
-        <p>email: misakren@gmail.com</p>
-        <p>adresa: Uličná 123, Město 123 45</p>
-        <p>tel: 123 456 789</p>
+        <div class="form">
+
+            <h2 class="title title--medium title--center">Kontaktní formulář</h2>
+
+            <form action="" method="post">
+
+                <div class="form-window">
+                    <label for="jmeno" class="required">Jméno a příjmení</label>
+                    <input type="text" name="jmeno" id="jmeno" required>
+                </div>
+
+                <div class="form-window">
+                    <label for="email" class="required">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="form-window">
+                    <label for="zprava" class="required">Zpráva</label>
+                    <textarea name="zprava" id="zprava" rows="10" required></textarea>
+                </div>
+
+                <button class="button" type="submit">Odeslat zprávu</button>
+            </form>
+        </div>
+
+        <p class="info">
+            Michaela Křenková <br>
+            email: misakren@gmail.com <br>
+            adresa: Uličná 123, Město 123 45 <br>
+            tel: 123 456 789
+        </p>
     </main>
 
 

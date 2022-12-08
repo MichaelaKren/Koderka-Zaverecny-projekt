@@ -1,3 +1,5 @@
+/* OBECNÉ */
+
 html { box-sizing: border-box; }
 *, :after, :before { box-sizing: inherit; }
 
@@ -18,43 +20,57 @@ body{
     color: var(--font);
 }
 
-img{
-    max-width: 200px;
-}
-
-
-.title--big,
-.title--medium,
-.title--small{
+.title{
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     margin: 0;
 }
 
+.title--big{
+    font-size: 40px;
+}
+
+.title--medium{
+    font-size: 32px;
+}
+
+.title--small{
+    font-size: 24px;
+}
+
+.title--center{
+    text-align: center;
+}
+
 
 .button{
+    display: inline-block;
     background-color: var(--button);
     border-radius: 15px;
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 30px;
     text-decoration: none;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     font-size: 24px;
+    border: none;
 }
 
 .button:hover{
     background-color: var(--button-hover);
 }
 
+/**/ 
+/* HEADER */ 
 
 .logo{
     display: flex;
     padding: 20px;
     background-color: var(--section-light);
+    justify-content: center;
 }
 
 .logo__image{
@@ -80,7 +96,7 @@ img{
     background-color: var(--menu);
     font-size: 40px;
     font-weight: 700;
-    padding: 30px;
+    
 }
 
 .menu__checkbox{
@@ -97,7 +113,8 @@ img{
     color: white;
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
-    padding: 15px;
+    padding: 20px;
+    display: block;
 }
 
 .menu__list{
@@ -124,6 +141,8 @@ img{
     background-color: var(--menu-hover);
 }
 
+/* ÚVODNÍ STRANA */
+
 .toy{
     padding: 30px;
     background-color: var(--section-light);
@@ -134,20 +153,120 @@ img{
     margin-bottom: 30px;
 }
 
+.toy__image{
+    max-width: 100%;
+    margin-top: 30px;
+}
+
 .crochet{
     background-color: var(--section-dark);
     padding: 30px
 }
 
-.crochet-images{
+.crochet__images{
     display: flex;
+    
+    flex-wrap: wrap;
+}
+
+.crochet__image{
     flex: 0 0 50%;
+    max-width: 50%;
 }
 
 .myself{
     padding: 30px;
     background-color: var(--section-light);
 }
+
+.myself__image{
+    max-width: 100%;
+    border-radius: 50%;
+    padding: 0 20%;
+}
+
+/* FOTOGALERIE */
+.introduction{
+    padding: 30px;
+    text-align: center;
+}
+
+.introduction__text{
+    margin-bottom: 30px;
+}
+
+.gallery{
+    padding: 30px;
+}
+
+.gallery__image{
+    max-width: 100%;
+}
+
+/* PRODEJ */
+
+.sale{
+    padding: 30px;
+}
+
+.sale__image{
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+
+.sale__item{
+    padding: 10px 0;
+}
+
+.sale__list{
+    padding: 0;
+    list-style: none; 
+}
+
+.conclusion{
+    padding: 30px;
+    text-align: center;
+}
+
+
+
+/* KONTAKT */
+
+.form{
+    padding: 30px;
+}
+
+.form-window {
+	margin-bottom: 1rem;
+}
+
+.form-window label {
+	display: block;
+	color: var(--font);
+	font-size: 15px;
+	margin-bottom: 0.5rem;
+}
+
+.form-window :is(input, textarea, select) {
+	width: 100%;
+	padding: 0.5rem;
+	border: 1px solid var(--font);
+	border-radius: 4px;
+}
+
+.required:after {
+	content: "*";
+	color: red;
+	margin-left: 4px;
+}
+
+.info{
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+}
+
+/* FOOTER */
 
 .footer{
     background-color: var(--menu);
@@ -179,7 +298,13 @@ img{
     padding-top: 20px;
 }
 
-@media screen and (min-width: 800px) {
+/* tablet */
+@media screen and (min-width: 700px){
+
+}
+
+/* počítač */
+@media screen and (min-width: 1000px) {
     .menu__toggler{
         display: none;
     }

@@ -39,16 +39,13 @@ body{
     font-size: 32px;
 }
 
-.title--small{
-    font-size: 24px;
-}
-
 .title--center{
     text-align: center;
 }
 
 .button{
     text-align: center;
+    margin-top: 50px;
 }
 
 .button__link{
@@ -68,6 +65,10 @@ body{
 
 .button__link:hover{
     background-color: var(--button-hover);
+}
+
+.background-dark-wrapper{
+    background-color: var(--section-dark);
 }
 
 /**/ 
@@ -384,9 +385,7 @@ body{
     /*ÚVODNÍ*/
 
 
-    .background-dark-wrapper{
-        background-color: var(--section-dark);
-    }
+
 
     .toy__image-wrapper{
         text-align: center;
@@ -398,6 +397,7 @@ body{
 
 
     /*FOTOGALERIE*/
+
     .gallery{
         padding: 60px;
         text-align: center;
@@ -432,7 +432,7 @@ body{
     .form-window{
         max-width: 500px;
         margin: 0 auto;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
 
     /*FOOTER*/
@@ -457,25 +457,119 @@ body{
         padding: 90px;
         max-width: 1200px;
     }
+
+    .title--big{
+        font-size: 50px;
+    }
+
+    .item--reverse{
+        order: 2;
+    }
+
     /*HEADER*/
     /*ÚVODNÍ*/
+
     .toy{
         display: flex;
+        align-items: center;
+    }
 
+    .toy__description{
+        flex: 1 1 50%;
+    }
+
+    .toy__image-wrapper{
+        flex: 1 1 50%;
+        padding-left: 30px;
     }
 
     .toy__image{
+        margin: 0;
+        border-radius: 5px 15px;
         width: 100%;
     }
 
+
     .crochet{
         display: flex;
+        align-items: center;
+    }
+
+    .crochet__description{
+        flex: 1 1 50%;
+        padding-left: 30px;
+    }
+
+    .crochet__images{
+        flex: 1 1 50%;
+    }
+
+    .crochet__image{
+        margin: 0;
+        width: 100%;
     }
 
     .myself{
         display: flex;
+        align-items: center;
     }
+
+    .myself__description{
+        flex: 1 1 50%;
+    }
+
+    .myself__image-wrapper{
+        flex: 1 1 50%;
+        padding-left: 60px;
+    }
+
+    .myself__image{
+        margin: 0;
+        border-radius: 50%;
+        max-width: 100%;
+    }
+
     /*FOTOGALERIE*/
+
+    .introduction{
+        max-width: 900px;
+    }
+
+    .conclusion{
+        max-width: 900px;
+    }
+
     /*PRODEJ*/
+
+    .sale__item{
+        display: flex;
+        max-width: 1200px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sale__image-wrapper{
+        max-width: 60%;
+    }
+
+    .sale__image{
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .sale__description{
+        text-align: left;
+    }
+
     /*KONTAKT*/
+
+    .form-window{
+        max-width: 700px;
+        padding-bottom: 30px;
+    }
+
+    .info{
+        padding: 70px 0;
+        font-size: 24px;
+    }
 }

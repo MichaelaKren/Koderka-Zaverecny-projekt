@@ -2,7 +2,7 @@
 layout: header-footer.njk
 title: Kontakt
 ---
-        <div class="introduction">
+        <div class="introduction container">
             <h1 class="title title--big title--center">Kontaktujte mě!</h1>
             <p class="introduction__text">
                 Pokud máte zájem o plyšáka nebo byste se rádi na něco zeptali, napište mi!
@@ -29,8 +29,9 @@ title: Kontakt
                     <label for="zprava" class="required">Zpráva</label>
                     <textarea name="zprava" id="zprava" rows="10" required></textarea>
                 </div>
-
-                <button class="button" type="submit">Odeslat zprávu</button>
+                <div class="button">
+                    <button class="button__link" type="submit">Odeslat zprávu</button>
+                </div>
             </form>
         </div>
 

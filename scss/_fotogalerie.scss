@@ -11,6 +11,7 @@
     @media screen and (min-width: 1000px){
         display: flex;
         flex-wrap: wrap;
+        max-width: 1200px;
     }
     &__item{
         padding-bottom: 20px;

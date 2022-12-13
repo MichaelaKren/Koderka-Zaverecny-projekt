@@ -4,7 +4,7 @@
     &__item{
         padding: variables.$spacer;
         @media screen and (min-width: 750px){
-            padding: 60px;
+            padding: variables.$spacer * 2;
             margin: 0 auto;
         }
         @media screen and (min-width: 1000px) {
@@ -12,6 +12,7 @@
             max-width: 1200px;
             align-items: center;
             justify-content: space-between;
+            padding: variables.$spacer * 3;
         }
         &--dark{
             background-color: variables.$c-section-dark;
@@ -19,9 +20,8 @@
         &--light{
             background-color: variables.$c-section-light;
         }
+    
     }
-
-
 
     &__image{
         max-width: 100%;
@@ -62,7 +62,11 @@
 .conclusion{
     padding: variables.$spacer;
     text-align: center;
+    @media screen and (min-width: 750px) {
+        padding: variables.$spacer * 2;
+    }
     @media screen and (min-width: 1000px) {
+        padding: variables.$spacer * 3;
         max-width: 900px;
     }
 }

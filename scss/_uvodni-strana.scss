@@ -43,9 +43,13 @@
 .crochet{
     background-color: variables.$c-section-dark;
     padding: variables.$spacer;
+    @media screen and (min-width: 750px) {
+        padding: variables.$spacer * 2;
+    }
     @media screen and (min-width: 1000px) {
         display: flex;
         align-items: center;
+        padding: variables.$spacer * 3;
     }
     &__description{
         @media screen and (min-width: 1000px) {
@@ -74,9 +78,13 @@
 .myself{
     padding: 30px;
     background-color: variables.$c-section-light;
+    @media screen and (min-width: 750px) {
+        padding: variables.$spacer * 2;
+    }
     @media screen and (min-width: 1000px) {
         display: flex;
         align-items: center;
+        padding: variables.$spacer * 3;
     }
     &__description{
         @media screen and (min-width: 1000px) {

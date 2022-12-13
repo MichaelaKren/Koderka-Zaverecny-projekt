@@ -1,0 +1,93 @@
+@use 'variables';
+
+.logo{
+    display: flex;
+    padding: 20px;
+    background-color: variables.$c-section-light;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 750px){
+        padding: 40px;
+    }
+    &__image{
+        width: 50px;
+        height: 50px;
+        background-color: variables.$c-menu-hover;
+        border-radius: 50%;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+        padding: 4px;
+        @media screen and (min-width: 750px){
+            width: 70px;
+            height: 70px;
+        }
+    }
+    &__text{
+        font-family: variables.$font-special;
+        font-size: 40px;
+        font-weight: 700;
+        margin: 0;
+        padding-left: 10px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+        @media screen and (min-width: 750px){
+            font-size: 48px;
+        }
+    }
+}
+
+.menu{
+    background-color: variables.$c-menu;
+    font-size: 40px;
+    font-weight: 700;
+    &__checkbox{
+        position: absolute;
+        left: -9999px;
+    }
+    &__checkbox:checked ~ .menu__list{
+        display: block;
+    }
+    &__toggler{
+        cursor: pointer;
+        color: white;
+        font-family: variables.$font-special;
+        font-weight: 700;
+        padding: 20px;
+        display: block;
+        @media screen and (min-width: 750px){
+            display: none;
+        }
+    }
+    &__list{
+        padding: 0;
+        margin: 0;
+        display: none;
+        @media screen and (min-width: 750px){
+            display: flex !important;
+            margin-top: 0;
+            background-color: variables.$c-menu;
+            font-size: 40px;
+            font-weight: 700;
+            justify-content: space-evenly;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
+    &__tab{
+        list-style: none;
+    }
+    &__link{
+        background-color: variables.$c-menu;
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        font-family: variables.$font-special;
+        font-weight: 700;
+        @media screen and (min-width: 750px){
+            display: inline-block;
+            padding: 20px 40px;
+        }
+    }
+    &__link:hover{
+        background-color: variables.$c-menu-hover;
+    }
+}

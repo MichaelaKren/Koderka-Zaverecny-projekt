@@ -1,0 +1,105 @@
+@use 'variables';
+
+.toy{
+    background-color: variables.$c-section-light;
+    @media screen and (min-width: 1000px) {
+        display: flex;
+        align-items: center;
+    }
+    &__description{
+        @media screen and (min-width: 1000px) {
+            flex: 1 1 50%;
+        }
+    }
+    &__list{
+        padding-left: 20px;
+        margin-bottom: variables.$spacer;
+    }
+
+    &__image{
+        max-width: 100%;
+        margin-top: variables.$spacer;
+        border-radius: 5px 15px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        @media screen and (min-width: 750px){
+            width: 75%;
+        }
+        @media screen and (min-width: 1000px) {
+            margin: 0;
+            width: 100%;
+        }
+        &-wrapper{
+            @media screen and (min-width: 750px){
+                text-align: center;
+            }
+            @media screen and (min-width: 1000px) {
+                flex: 1 1 50%;
+                padding-left: variables.$spacer;
+            }
+        }
+    }
+}
+
+.crochet{
+    background-color: variables.$c-section-dark;
+    padding: variables.$spacer;
+    @media screen and (min-width: 1000px) {
+        display: flex;
+        align-items: center;
+    }
+    &__description{
+        @media screen and (min-width: 1000px) {
+            flex: 1 1 50%;
+            padding-left: variables.$spacer;
+        }
+    }
+    &__images{
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        @media screen and (min-width: 1000px) {
+            flex: 1 1 50%;
+        }
+    }
+    &__image{
+        flex: 0 0 50%;
+        max-width: 50%;
+        @media screen and (min-width: 1000px) {
+            margin: 0;
+            width: 100%;
+        }   
+    }
+}
+
+.myself{
+    padding: 30px;
+    background-color: variables.$c-section-light;
+    @media screen and (min-width: 1000px) {
+        display: flex;
+        align-items: center;
+    }
+    &__description{
+        @media screen and (min-width: 1000px) {
+            flex: 1 1 50%;
+        }
+    }
+
+    &__image{
+        max-width: 50%;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 0 1px 7px rgba(0, 0, 0, 0.3);
+        @media screen and (min-width: 1000px) {
+            margin: 0;
+            border-radius: 50%;
+            max-width: 100%;
+        }
+        &-wrapper{
+            text-align: center;
+            @media screen and (min-width: 1000px) {
+                flex: 1 1 50%;
+                padding-left: variables.$spacer * 2;
+            }
+        }
+    }
+}

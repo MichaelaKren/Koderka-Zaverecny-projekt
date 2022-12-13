@@ -1,0 +1,106 @@
+@use 'variables';
+
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+body{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+    color: variables.$c-font;
+}
+
+.main{
+    background-color: variables.$c-section-light;
+    font-size: 16px;
+    @media screen and (min-width: 750px){
+        font-size: 18px;
+    }
+}
+
+.container{
+    padding: variables.$spacer;
+    @media screen and (min-width: 750px){
+        padding: variables.$spacer * 2;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 1000px) {
+        padding: variables.$spacer * 3;
+        max-width: 1200px;
+    }
+}
+
+.introduction{
+    padding: variables.$spacer;
+    text-align: center;
+    @media screen and (min-width: 1000px){
+        max-width: 900px;
+    }
+    &__text{
+        margin-bottom: variables.$spacer;
+    }
+}
+
+.background-dark-wrapper{
+    background-color: variables.$c-section-dark;
+}
+
+.item--reverse{
+    @media screen and (min-width: 1000px) {
+        order: 2;
+    }
+}
+
+.title{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    &--big{
+        font-size: 40px;
+        @media screen and (min-width: 750px){
+            font-size: 44px;
+        }
+        @media screen and (min-width: 1000px) {
+            font-size: 50px;
+        }
+    }
+    &--medium{
+        font-size: 32px;
+        @media screen and (min-width: 750px){
+            font-size: 36px;
+        }
+    }
+    &--center{
+        text-align: center;
+    }
+}
+
+.button{
+    text-align: center;
+    margin-top: 50px;
+    &__link{
+        display: inline-block;
+        background-color: variables.$c-button;
+        border-radius: 15px;
+        font-family: 'Amatic SC', cursive;
+        font-weight: 700;
+        color: white;
+        padding: 10px 30px;
+        text-decoration: none;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+        font-size: 24px;
+        border: none;
+        @media screen and (min-width: 750px){
+            font-size: 30px;
+        }
+        :hover{
+            background-color: variables.$c-button-hover;
+        }
+    }
+}
+
+
+

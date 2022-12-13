@@ -1,7 +1,9 @@
 materialy/
 
-### Node ###
+
 node_modules/
+
+_site/
 
 ### VisualStudioCode ###
 .vscode/*
